@@ -8,7 +8,7 @@ import App from './App';
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={EventsTable} />
+      <Route exact path="/" component={App} />
       <Route path="/scan" component={Scan} />
     </Switch>
   </BrowserRouter>
