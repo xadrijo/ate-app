@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import AtendeesTable from './AtendeesTable'
 import QrReader from 'react-qr-reader';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
@@ -46,6 +47,9 @@ class ScanReader extends Component {
             </div>
           </div>
         </div>
+
+        <AtendeesTable />
+
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Event Name</ModalHeader>
           <ModalBody>
